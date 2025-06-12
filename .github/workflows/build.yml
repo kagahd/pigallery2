@@ -9,6 +9,8 @@ on:
       - '**'
     tags:
       - '*.*'
+  workflow_dispatch:
+
 
 jobs:
   test:
