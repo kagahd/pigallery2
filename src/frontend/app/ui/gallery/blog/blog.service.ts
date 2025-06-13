@@ -56,7 +56,7 @@ export class BlogService {
       }];
     }
 
-    dates.sort();
+    dates.sort((a, b) => a - b);
 
     const splitterRgx = new RegExp(/^\s*<!--\s*@pg-date:?\s*\d{4}-\d{1,2}-\d{1,2}\s*-->/, 'gim');
     const dateRgx = new RegExp(/\d{4}-\d{1,2}-\d{1,2}/);
